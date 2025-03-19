@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Симуляція ядерного вибуху</title>
+
+</head>
+<body>
+<div class="controls">
+    <label for="yield">Потужність вибуху (кілотонн):</label>
+    <input type="number" id="yield" min="1" value="10">
+    <button onclick="startSimulation()">Запустити симуляцію</button>
+</div>
+<canvas id="explosionCanvas"></canvas>
+<footer>зробила Мартенюк Аліна</footer>
+<div class="damage hidden" id="damageDisplay">Радіус ураження: 0</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
